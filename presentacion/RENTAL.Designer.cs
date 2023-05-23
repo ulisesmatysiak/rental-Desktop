@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvRental = new System.Windows.Forms.DataGridView();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.btnModificar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.lblCliente = new System.Windows.Forms.Label();
             this.lblCheckIn = new System.Windows.Forms.Label();
@@ -38,24 +38,33 @@
             this.lblSpot = new System.Windows.Forms.Label();
             this.lblImporte = new System.Windows.Forms.Label();
             this.txtCliente = new System.Windows.Forms.TextBox();
-            this.txtSpot = new System.Windows.Forms.TextBox();
             this.txtImporte = new System.Windows.Forms.TextBox();
             this.dtpCheckIn = new System.Windows.Forms.DateTimePicker();
             this.dtpCheckOut = new System.Windows.Forms.DateTimePicker();
+            this.cboSpot = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRental)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvRental
             // 
             this.dgvRental.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.NullValue = null;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvRental.DefaultCellStyle = dataGridViewCellStyle1;
             this.dgvRental.Location = new System.Drawing.Point(27, 290);
             this.dgvRental.Name = "dgvRental";
-            this.dgvRental.Size = new System.Drawing.Size(570, 150);
+            this.dgvRental.Size = new System.Drawing.Size(593, 150);
             this.dgvRental.TabIndex = 0;
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(522, 42);
+            this.btnAgregar.Location = new System.Drawing.Point(408, 146);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(75, 23);
             this.btnAgregar.TabIndex = 1;
@@ -63,19 +72,9 @@
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
-            // btnModificar
-            // 
-            this.btnModificar.Location = new System.Drawing.Point(522, 92);
-            this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(75, 23);
-            this.btnModificar.TabIndex = 2;
-            this.btnModificar.Text = "Modificar";
-            this.btnModificar.UseVisualStyleBackColor = true;
-            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
-            // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(522, 147);
+            this.btnEliminar.Location = new System.Drawing.Point(545, 146);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(75, 23);
             this.btnEliminar.TabIndex = 3;
@@ -135,13 +134,6 @@
             this.txtCliente.Size = new System.Drawing.Size(100, 20);
             this.txtCliente.TabIndex = 11;
             // 
-            // txtSpot
-            // 
-            this.txtSpot.Location = new System.Drawing.Point(135, 191);
-            this.txtSpot.Name = "txtSpot";
-            this.txtSpot.Size = new System.Drawing.Size(100, 20);
-            this.txtSpot.TabIndex = 14;
-            // 
             // txtImporte
             // 
             this.txtImporte.Location = new System.Drawing.Point(135, 245);
@@ -163,15 +155,23 @@
             this.dtpCheckOut.Size = new System.Drawing.Size(200, 20);
             this.dtpCheckOut.TabIndex = 17;
             // 
+            // cboSpot
+            // 
+            this.cboSpot.FormattingEnabled = true;
+            this.cboSpot.Location = new System.Drawing.Point(135, 191);
+            this.cboSpot.Name = "cboSpot";
+            this.cboSpot.Size = new System.Drawing.Size(121, 21);
+            this.cboSpot.TabIndex = 18;
+            // 
             // RENTAL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(618, 460);
+            this.ClientSize = new System.Drawing.Size(1002, 460);
+            this.Controls.Add(this.cboSpot);
             this.Controls.Add(this.dtpCheckOut);
             this.Controls.Add(this.dtpCheckIn);
             this.Controls.Add(this.txtImporte);
-            this.Controls.Add(this.txtSpot);
             this.Controls.Add(this.txtCliente);
             this.Controls.Add(this.lblImporte);
             this.Controls.Add(this.lblSpot);
@@ -179,9 +179,9 @@
             this.Controls.Add(this.lblCheckIn);
             this.Controls.Add(this.lblCliente);
             this.Controls.Add(this.btnEliminar);
-            this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.dgvRental);
+            this.MaximizeBox = false;
             this.Name = "RENTAL";
             this.Text = "RENTAL PANEL";
             this.Load += new System.EventHandler(this.RENTAL_Load);
@@ -195,7 +195,6 @@
 
         private System.Windows.Forms.DataGridView dgvRental;
         private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Label lblCliente;
         private System.Windows.Forms.Label lblCheckIn;
@@ -203,10 +202,10 @@
         private System.Windows.Forms.Label lblSpot;
         private System.Windows.Forms.Label lblImporte;
         private System.Windows.Forms.TextBox txtCliente;
-        private System.Windows.Forms.TextBox txtSpot;
         private System.Windows.Forms.TextBox txtImporte;
         private System.Windows.Forms.DateTimePicker dtpCheckIn;
         private System.Windows.Forms.DateTimePicker dtpCheckOut;
+        private System.Windows.Forms.ComboBox cboSpot;
     }
 }
 

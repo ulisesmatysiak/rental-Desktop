@@ -12,7 +12,9 @@ namespace dominio
 
         public string Cliente { get; set; }
 
-        public Fecha Fecha { get; set; }
+        public DateTime CheckIn { get; set; }
+
+        public DateTime CheckOut { get; set; }
 
         public Spot Spot { get; set; }
 
