@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvRental = new System.Windows.Forms.DataGridView();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
@@ -50,17 +50,17 @@
             this.dgvRental.BackgroundColor = System.Drawing.Color.SlateGray;
             this.dgvRental.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvRental.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Meiryo UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.NullValue = null;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvRental.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Meiryo UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.NullValue = null;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvRental.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvRental.GridColor = System.Drawing.Color.PowderBlue;
-            this.dgvRental.Location = new System.Drawing.Point(417, 8);
+            this.dgvRental.Location = new System.Drawing.Point(13, 23);
             this.dgvRental.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dgvRental.Name = "dgvRental";
             this.dgvRental.Size = new System.Drawing.Size(607, 162);
@@ -68,7 +68,7 @@
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(41, 329);
+            this.btnAgregar.Location = new System.Drawing.Point(657, 297);
             this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(88, 25);
@@ -79,7 +79,7 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(303, 329);
+            this.btnEliminar.Location = new System.Drawing.Point(922, 297);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(88, 25);
@@ -91,7 +91,7 @@
             // lblCliente
             // 
             this.lblCliente.AutoSize = true;
-            this.lblCliente.Location = new System.Drawing.Point(38, 55);
+            this.lblCliente.Location = new System.Drawing.Point(657, 23);
             this.lblCliente.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCliente.Name = "lblCliente";
             this.lblCliente.Size = new System.Drawing.Size(48, 14);
@@ -101,7 +101,7 @@
             // lblCheckIn
             // 
             this.lblCheckIn.AutoSize = true;
-            this.lblCheckIn.Location = new System.Drawing.Point(38, 99);
+            this.lblCheckIn.Location = new System.Drawing.Point(657, 67);
             this.lblCheckIn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCheckIn.Name = "lblCheckIn";
             this.lblCheckIn.Size = new System.Drawing.Size(58, 14);
@@ -111,7 +111,7 @@
             // lblCheckOut
             // 
             this.lblCheckOut.AutoSize = true;
-            this.lblCheckOut.Location = new System.Drawing.Point(38, 149);
+            this.lblCheckOut.Location = new System.Drawing.Point(657, 117);
             this.lblCheckOut.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCheckOut.Name = "lblCheckOut";
             this.lblCheckOut.Size = new System.Drawing.Size(66, 14);
@@ -121,7 +121,7 @@
             // lblSpot
             // 
             this.lblSpot.AutoSize = true;
-            this.lblSpot.Location = new System.Drawing.Point(38, 206);
+            this.lblSpot.Location = new System.Drawing.Point(657, 176);
             this.lblSpot.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSpot.Name = "lblSpot";
             this.lblSpot.Size = new System.Drawing.Size(37, 14);
@@ -131,7 +131,7 @@
             // lblImporte
             // 
             this.lblImporte.AutoSize = true;
-            this.lblImporte.Location = new System.Drawing.Point(38, 264);
+            this.lblImporte.Location = new System.Drawing.Point(657, 232);
             this.lblImporte.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblImporte.Name = "lblImporte";
             this.lblImporte.Size = new System.Drawing.Size(56, 14);
@@ -140,7 +140,7 @@
             // 
             // txtCliente
             // 
-            this.txtCliente.Location = new System.Drawing.Point(158, 55);
+            this.txtCliente.Location = new System.Drawing.Point(777, 23);
             this.txtCliente.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtCliente.Name = "txtCliente";
             this.txtCliente.Size = new System.Drawing.Size(116, 21);
@@ -148,7 +148,7 @@
             // 
             // txtImporte
             // 
-            this.txtImporte.Location = new System.Drawing.Point(158, 264);
+            this.txtImporte.Location = new System.Drawing.Point(777, 232);
             this.txtImporte.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtImporte.Name = "txtImporte";
             this.txtImporte.Size = new System.Drawing.Size(116, 21);
@@ -156,7 +156,7 @@
             // 
             // dtpCheckIn
             // 
-            this.dtpCheckIn.Location = new System.Drawing.Point(158, 99);
+            this.dtpCheckIn.Location = new System.Drawing.Point(777, 67);
             this.dtpCheckIn.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dtpCheckIn.Name = "dtpCheckIn";
             this.dtpCheckIn.Size = new System.Drawing.Size(233, 21);
@@ -164,7 +164,7 @@
             // 
             // dtpCheckOut
             // 
-            this.dtpCheckOut.Location = new System.Drawing.Point(158, 149);
+            this.dtpCheckOut.Location = new System.Drawing.Point(777, 117);
             this.dtpCheckOut.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dtpCheckOut.Name = "dtpCheckOut";
             this.dtpCheckOut.Size = new System.Drawing.Size(233, 21);
@@ -173,7 +173,7 @@
             // cboSpot
             // 
             this.cboSpot.FormattingEnabled = true;
-            this.cboSpot.Location = new System.Drawing.Point(158, 206);
+            this.cboSpot.Location = new System.Drawing.Point(777, 174);
             this.cboSpot.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cboSpot.Name = "cboSpot";
             this.cboSpot.Size = new System.Drawing.Size(140, 22);
