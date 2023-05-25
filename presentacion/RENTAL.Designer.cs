@@ -47,26 +47,31 @@
             // 
             // dgvRental
             // 
+            this.dgvRental.BackgroundColor = System.Drawing.Color.SlateGray;
+            this.dgvRental.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvRental.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Meiryo UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle1.NullValue = null;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvRental.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvRental.Location = new System.Drawing.Point(27, 290);
+            this.dgvRental.GridColor = System.Drawing.Color.PowderBlue;
+            this.dgvRental.Location = new System.Drawing.Point(417, 8);
+            this.dgvRental.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dgvRental.Name = "dgvRental";
-            this.dgvRental.Size = new System.Drawing.Size(593, 150);
+            this.dgvRental.Size = new System.Drawing.Size(607, 162);
             this.dgvRental.TabIndex = 0;
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(408, 146);
+            this.btnAgregar.Location = new System.Drawing.Point(41, 329);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregar.Size = new System.Drawing.Size(88, 25);
             this.btnAgregar.TabIndex = 1;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
@@ -74,9 +79,10 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(545, 146);
+            this.btnEliminar.Location = new System.Drawing.Point(303, 329);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(75, 23);
+            this.btnEliminar.Size = new System.Drawing.Size(88, 25);
             this.btnEliminar.TabIndex = 3;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
@@ -85,89 +91,100 @@
             // lblCliente
             // 
             this.lblCliente.AutoSize = true;
-            this.lblCliente.Location = new System.Drawing.Point(27, 51);
+            this.lblCliente.Location = new System.Drawing.Point(38, 55);
+            this.lblCliente.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCliente.Name = "lblCliente";
-            this.lblCliente.Size = new System.Drawing.Size(42, 13);
+            this.lblCliente.Size = new System.Drawing.Size(48, 14);
             this.lblCliente.TabIndex = 6;
             this.lblCliente.Text = "Cliente:";
             // 
             // lblCheckIn
             // 
             this.lblCheckIn.AutoSize = true;
-            this.lblCheckIn.Location = new System.Drawing.Point(27, 92);
+            this.lblCheckIn.Location = new System.Drawing.Point(38, 99);
+            this.lblCheckIn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCheckIn.Name = "lblCheckIn";
-            this.lblCheckIn.Size = new System.Drawing.Size(52, 13);
+            this.lblCheckIn.Size = new System.Drawing.Size(58, 14);
             this.lblCheckIn.TabIndex = 7;
             this.lblCheckIn.Text = "Check in:";
             // 
             // lblCheckOut
             // 
             this.lblCheckOut.AutoSize = true;
-            this.lblCheckOut.Location = new System.Drawing.Point(30, 138);
+            this.lblCheckOut.Location = new System.Drawing.Point(38, 149);
+            this.lblCheckOut.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCheckOut.Name = "lblCheckOut";
-            this.lblCheckOut.Size = new System.Drawing.Size(59, 13);
+            this.lblCheckOut.Size = new System.Drawing.Size(66, 14);
             this.lblCheckOut.TabIndex = 8;
             this.lblCheckOut.Text = "Check out:";
             // 
             // lblSpot
             // 
             this.lblSpot.AutoSize = true;
-            this.lblSpot.Location = new System.Drawing.Point(30, 191);
+            this.lblSpot.Location = new System.Drawing.Point(38, 206);
+            this.lblSpot.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSpot.Name = "lblSpot";
-            this.lblSpot.Size = new System.Drawing.Size(32, 13);
+            this.lblSpot.Size = new System.Drawing.Size(37, 14);
             this.lblSpot.TabIndex = 9;
             this.lblSpot.Text = "Spot:";
             // 
             // lblImporte
             // 
             this.lblImporte.AutoSize = true;
-            this.lblImporte.Location = new System.Drawing.Point(33, 245);
+            this.lblImporte.Location = new System.Drawing.Point(38, 264);
+            this.lblImporte.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblImporte.Name = "lblImporte";
-            this.lblImporte.Size = new System.Drawing.Size(45, 13);
+            this.lblImporte.Size = new System.Drawing.Size(56, 14);
             this.lblImporte.TabIndex = 10;
             this.lblImporte.Text = "Importe:";
             // 
             // txtCliente
             // 
-            this.txtCliente.Location = new System.Drawing.Point(135, 51);
+            this.txtCliente.Location = new System.Drawing.Point(158, 55);
+            this.txtCliente.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtCliente.Name = "txtCliente";
-            this.txtCliente.Size = new System.Drawing.Size(100, 20);
+            this.txtCliente.Size = new System.Drawing.Size(116, 21);
             this.txtCliente.TabIndex = 11;
             // 
             // txtImporte
             // 
-            this.txtImporte.Location = new System.Drawing.Point(135, 245);
+            this.txtImporte.Location = new System.Drawing.Point(158, 264);
+            this.txtImporte.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtImporte.Name = "txtImporte";
-            this.txtImporte.Size = new System.Drawing.Size(100, 20);
+            this.txtImporte.Size = new System.Drawing.Size(116, 21);
             this.txtImporte.TabIndex = 15;
             // 
             // dtpCheckIn
             // 
-            this.dtpCheckIn.Location = new System.Drawing.Point(135, 92);
+            this.dtpCheckIn.Location = new System.Drawing.Point(158, 99);
+            this.dtpCheckIn.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dtpCheckIn.Name = "dtpCheckIn";
-            this.dtpCheckIn.Size = new System.Drawing.Size(200, 20);
+            this.dtpCheckIn.Size = new System.Drawing.Size(233, 21);
             this.dtpCheckIn.TabIndex = 16;
             // 
             // dtpCheckOut
             // 
-            this.dtpCheckOut.Location = new System.Drawing.Point(135, 138);
+            this.dtpCheckOut.Location = new System.Drawing.Point(158, 149);
+            this.dtpCheckOut.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dtpCheckOut.Name = "dtpCheckOut";
-            this.dtpCheckOut.Size = new System.Drawing.Size(200, 20);
+            this.dtpCheckOut.Size = new System.Drawing.Size(233, 21);
             this.dtpCheckOut.TabIndex = 17;
             // 
             // cboSpot
             // 
             this.cboSpot.FormattingEnabled = true;
-            this.cboSpot.Location = new System.Drawing.Point(135, 191);
+            this.cboSpot.Location = new System.Drawing.Point(158, 206);
+            this.cboSpot.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cboSpot.Name = "cboSpot";
-            this.cboSpot.Size = new System.Drawing.Size(121, 21);
+            this.cboSpot.Size = new System.Drawing.Size(140, 22);
             this.cboSpot.TabIndex = 18;
             // 
             // RENTAL
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1002, 460);
+            this.BackColor = System.Drawing.Color.SlateGray;
+            this.ClientSize = new System.Drawing.Size(1027, 495);
             this.Controls.Add(this.cboSpot);
             this.Controls.Add(this.dtpCheckOut);
             this.Controls.Add(this.dtpCheckIn);
@@ -181,6 +198,9 @@
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.dgvRental);
+            this.Font = new System.Drawing.Font("Meiryo UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.MaximizeBox = false;
             this.Name = "RENTAL";
             this.Text = "RENTAL PANEL";
